@@ -1,0 +1,108 @@
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/L1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/companyname"
+        android:text="@string/companyname"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/companyname"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/username" />
+
+    <EditText
+        android:id="@+id/upass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/pass"
+        android:maxLines="1"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Login"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:background="@color/button"
+        android:onClick="login"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reguster"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/register"
+        android:textStyle="bold"
+        android:textColor="@color/register"
+        android:onClick="callsignup"/>
+
+    <LinearLayout
+        android:id="@+id/R1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebook"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twitter"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/linkedin"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/instagram"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/copyright"
+        android:text="@string/copyright"
+        android:textColor="@color/companyname"
+        android:layout_marginTop="70dp"/>
+
+</LinearLayout>
